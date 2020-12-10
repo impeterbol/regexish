@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- import Raleway font -->
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap" rel="stylesheet">
+
+   <!-- Compiled and minified materialize -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
+   
+   <title>Welcome to the PFAM portal</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <h1>Welcome to the PFAM portal</h1>
+            
+            <h5>This website is built for adjusting the PFAM list towards a format consumable by PMT tool. This means removing new line char and adding commas. To start - copy your PFAMS from xls file and hit enter. Enjoy!</h5>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <label for="story">Tell us your PFAMS:</label>
+
+                <textarea id="pfamsField" ></textarea>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+           
+            <button type="button" class='btnPfams' onclick="adjustPfams()">Click Me!</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <h5>Your adjusted set of pfams will appear below. The final number of pfams is <p id = 'finalNumOfPfams'></p></h5>
+        
+        <div class="col s12">
+            <p id="finalPfams"></p>
+
+        </div>
+    </div>
+       
+  
+</div>
+   
+
+    <script src="./script.js"></script>
+</body>
+</html>
