@@ -1,4 +1,8 @@
 console.log("CONNECTED")
+document.querySelectorAll('.btnPfams').onclick = function() {
+    console.log('testing')
+}
+
 
 function adjustPfams(){
     console.log("working, btn pressed")
@@ -7,5 +11,6 @@ function adjustPfams(){
     let numOfPfams = newPfams.split(';').length
     document.getElementById('finalNumOfPfams').innerHTML = numOfPfams
     document.getElementById('finalPfams').innerHTML = newPfams
+    document.getElementById('finalPfams').disabled = true
 }
 
