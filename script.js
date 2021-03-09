@@ -31,7 +31,7 @@ function comparePfams(){
     if(numOfPfamsExcel>numOfPfamsPMT)
         document.getElementById('res').innerHTML = "Number of PFAMS in Excel("+numOfPfamsExcel+") is more than in PMT("+numOfPfamsPMT+")"
     else if (numOfPfamsExcel=numOfPfamsPMT)
-    document.getElementById('res').innerHTML = "Number of PFAMS in Excel("+numOfPfamsExcel+") is equals to PMT("+numOfPfamsPMT+")"
+    document.getElementById('res').innerHTML = "Number of PFAMS in Excel("+numOfPfamsExcel+") equals to PMT("+numOfPfamsPMT+")"
 
     else if (numOfPfamsExcel<numOfPfamsPMT)
     document.getElementById('res').innerHTML = "Number of PFAMS in Excel("+numOfPfamsExcel+") is less than in PMT("+numOfPfamsPMT+")"
