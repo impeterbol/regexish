@@ -7,13 +7,26 @@ console.log("CONNECTED")
 function adjustPfams(){
     // console.log("working, btn pressed")
     let userInput = document.getElementById('pfamsField').value
-    console.log(userInput)
+    // console.log(userInput)
     let newPfams = userInput.replace(/\n/g,";")
     let numOfPfams = newPfams.split(';').length
     document.getElementById('finalNumOfPfams').innerHTML = numOfPfams
     document.getElementById('finalPfams').innerHTML = newPfams
     document.getElementById('finalPfams').disabled = true
 }
+
+function replaceCommas(){
+    // console.log("working, btn pressed")
+    let userInput1 = document.getElementById('pfamsToReplaceCommas').value
+    // console.log(userInput1)
+    let newPfams1 = userInput1.replace(/,/g,";")
+    let numOfPfams1 = newPfams1.split(';').length
+    document.getElementById('finalPfamsReplacedWithSemicolon').innerHTML = numOfPfams1
+    document.getElementById('textAreaReplacedSemicolon').innerHTML = newPfams1
+    document.getElementById('textAreaReplacedSemicolon').disabled = true
+
+}
+
 
 function comparePfams(){
     // console.log("working");
@@ -72,4 +85,5 @@ function comparePfams(){
   }
    //end of function
 }
+
 
