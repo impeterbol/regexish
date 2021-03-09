@@ -1,11 +1,11 @@
 console.log("CONNECTED")
-document.querySelectorAll('.btnPfams').onclick = function() {
-    console.log('testing')
-}
+// document.querySelectorAll('.btnPfams').onclick = function() {
+//     console.log('testing')
+// }
 
 
 function adjustPfams(){
-    console.log("working, btn pressed")
+    // console.log("working, btn pressed")
     let userInput = document.getElementById('pfamsField').value
     console.log(userInput)
     let newPfams = userInput.replace(/\n/g,";")
@@ -16,7 +16,7 @@ function adjustPfams(){
 }
 
 function comparePfams(){
-    console.log("working");
+    // console.log("working");
     let userInputExcel = document.getElementById('compareInitialTextArea');
     let updUserInput = userInputExcel.value.replace(/\n/g,";")
     let numOfPfamsExcel = updUserInput.split(';').length
@@ -40,7 +40,7 @@ function comparePfams(){
    var pmtArr = userInputProgramConfig.value.split(";")
    
  
-   console.log("out of the loop")
+//    console.log("out of the loop")
    
    var finalArr = [];
    var counter = 0;
@@ -52,8 +52,8 @@ function comparePfams(){
           
            if(excelArr[i]==pmtArr[j]){
                        
-            console.log(excelArr[i] + "this is excel")
-            console.log(pmtArr[j] + "this is pmt")
+            // console.log(excelArr[i] + "this is excel")
+            // console.log(pmtArr[j] + "this is pmt")
             counter++;
            
         }
