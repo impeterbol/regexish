@@ -69,22 +69,17 @@ function comparePfams(){
     let userInputExcel = document.getElementById('compareInitialTextArea');
     let updUserInput = userInputExcel.value.replace(/\n/g,";")
     let numOfPfamsExcel = updUserInput.split(';').length
-
     let userInputProgramConfig = document.getElementById('compareFromConfigTextArea');
     let numOfPfamsPMT = userInputProgramConfig.value.split(';').length
     
-
     document.getElementById('excelLength').innerHTML = numOfPfamsExcel
     document.getElementById('pmtLength').innerHTML = numOfPfamsPMT
-
     if(numOfPfamsExcel>numOfPfamsPMT)
         document.getElementById('res').innerHTML = "Number of PFAMS in Excel("+numOfPfamsExcel+") is more than in PMT("+numOfPfamsPMT+")"
     else if (numOfPfamsExcel=numOfPfamsPMT)
     document.getElementById('res').innerHTML = "Number of PFAMS in Excel("+numOfPfamsExcel+") equals to PMT("+numOfPfamsPMT+")"
-
     else if (numOfPfamsExcel<numOfPfamsPMT)
     document.getElementById('res').innerHTML = "Number of PFAMS in Excel("+numOfPfamsExcel+") is less than in PMT("+numOfPfamsPMT+")"
-
     var excelArr = userInputExcel.value.replace(/\n/g,";").split(";");
    var pmtArr = userInputProgramConfig.value.split(";")
    
