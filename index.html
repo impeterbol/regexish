@@ -10,21 +10,45 @@
    <!-- Compiled and minified materialize -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">  
    
+ <!-- my personal css -->
+ <link rel="stylesheet" href="./style.css">
+
    <title>Welcome to the PFAM portal</title>
 </head>
 <body>
 <div class="container">
     <div class="row">
         <div class="col s12">
-            <h1>Welcome to the PFAM portal</h1>
+            <P>July 2021: Dear users, welcome the Dark Mode for all those long nights - Enjoy!
+                Feel free to send me a feature requests / feedback!
+            </P>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h1>Welcome to the Portal</h1>
             
-            <h5>This website is built for adjusting the PFAM list towards a format consumable by PMT tool. This means removing new line char and adding commas. To start - copy your PFAMS from xls file and hit enter. Enjoy!</h5>
+           <!-- dark mode switch -->
+           
+                <div class="switch">
+                    <label class="theme-switch">
+                       
+                      <input type="checkbox">
+                      <span class="lever"> </span>
+                      <i class="material-icons">wb_sunny</i>
+                    </label>
+                </div>
+            <!-- dark mode switch ends -->
+            
+            <h5>This website is built for adjusting the list towards a format consumable by the PMT. 
+                This means removing new line char and adding commas. To start - copy your data from xls file and hit enter. Enjoy!</h5>
             <div class="divider"></div>
         </div>
     </div>
     <div class="row">
         <div class="col s6">
-            <label for="story">Tell us your PFAMS from spreadsheet as a column:</label>
+            <label for="story">Tell us your data from spreadsheet as a column:</label>
 
                 <textarea id="pfamsField" rows="10" cols="50"></textarea>
 
@@ -41,7 +65,7 @@
     </div>
 
     <div class="row">
-        <p>Your adjusted set of pfams will appear below. The final number of pfams is <p id = 'finalNumOfPfams'></p><p>
+        <p>Your adjusted set of data will appear below. The final count is <p id = 'finalNumOfPfams'></p><p>
         
         <div class="col s6">
             <textarea id="finalPfams"></textarea>
@@ -62,7 +86,7 @@
     </div>
 
     <div class="row">
-        <h5>Paste here PFAMs from Program Config <p id = 'compareFromConfigP'></p></h5>
+        <h5>Paste here data from Program Config <p id = 'compareFromConfigP'></p></h5>
         
         <div class="col s6">
             <textarea id="compareFromConfigTextArea"></textarea>
@@ -74,8 +98,8 @@
 
 
     <div class="row">
-        <p>Length of PFAMS from Excel <p id = 'excelLength'></p></p>
-        <p>Length of PFAMS from PMT <p id = 'pmtLength'></p></p>
+        <p>Length of data from Excel <p id = 'excelLength'></p></p>
+        <p>Length of data from PMT <p id = 'pmtLength'></p></p>
         <div class="col s6">
             <h5> <p id = 'res'></p></h5>
             <h5> <p id = 'difference'></p></h5>

@@ -1,0 +1,28 @@
+/* dark mode switch */
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: blue;
+  }
+  
+  .switch label input[type=checkbox]:checked+.lever:after {
+    background-color: blue;
+  }
+/* dark mode switch ends */
+
+:root {
+    --bg-primary-color: #FDFCFD;
+    --fnt-secondary-color: black;
+}
+
+[data-theme="dark"] {
+    --bg-primary-color: black;
+    --fnt-secondary-color: #ccc;
+}
+
+body {
+background-color:var(--bg-primary-color);
+font-family: 'Raleway', sans-serif;
+color:var(--fnt-secondary-color);
+}
+textarea{
+    color:var(--fnt-secondary-color);
+}
